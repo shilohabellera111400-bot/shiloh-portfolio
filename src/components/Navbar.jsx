@@ -42,7 +42,7 @@ export default function Navbar({ onOpenVercelGuide }) {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500 shadow-[0_0_12px_#ef4444]"></span>
           </span>
           <span className="text-white group-hover:text-red-400 transition-colors">
-            {portfolioData.personalInfo.firstName}
+            My Portfolio
           </span>
           <span className="text-red-500">.</span>
         </a>

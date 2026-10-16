@@ -8,7 +8,7 @@ export default function Achievements() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeModal, setActiveModal] = useState(null);
 
-  const categories = ['All', 'Academic', 'Capstone', 'Certification', 'Leadership'];
+  const categories = ['All', 'Capstone', 'Technical', 'Creative', 'Academic', 'Certification', 'Leadership'];
 
   const filteredAchievements = selectedCategory === 'All'
     ? achievements

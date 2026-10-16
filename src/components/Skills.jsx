@@ -5,7 +5,7 @@ export default function Skills() {
   const { skills } = portfolioData;
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const categories = ['All', 'Frontend', 'Backend', 'Database', 'Security', 'Core', 'Tools'];
+  const categories = ['All', 'Frontend', 'Backend', 'Database', 'Creative', 'Security', 'Tools'];
 
   const filteredSkills = activeCategory === 'All'
     ? skills

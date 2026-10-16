@@ -35,16 +35,16 @@ export default function About() {
         <div className="lg:col-span-8 space-y-6 text-base sm:text-lg text-neutral-300 leading-relaxed font-light">
           <p>
             I'm <strong className="text-white font-medium">Shiloh Abellera</strong> — an Information Technology senior at 
-            <span className="text-white font-medium"> Nueva Ecija University of Science and Technology (NEUST)</span> passionate about web and mobile application engineering. 
-            I build responsive web portals, robust backend architectures, and database-driven solutions designed to modernize institutional processes.
+            <span className="text-white font-medium"> Nueva Ecija University of Science and Technology (NEUST)</span>, full-stack developer, and visual artist. 
+            I engineer responsive web portals, robust backend architectures, and database-driven solutions designed to modernize public governance and institutional workflows.
           </p>
 
           <p>
-            My practical development experience centers around real-world applications, such as <strong className="text-white font-medium">Barangay Cares</strong> — a comprehensive municipal e-services platform facilitating incident triage and digital document issuance. Through this and other academic projects, I have cultivated hands-on mastery of PHP, MySQL relational modeling, REST API integrations, JavaScript/React, and security controls such as XSS sanitation and RBAC authorization.
+            My flagship capstone project is <strong className="text-white font-medium">One-Palayan Kalinga Hub</strong> — an integrated web platform for the City Social Welfare and Development Office (CSWDO) of Palayan City that unifies social service appointments, housing beneficiary management, and AICS crisis tracking, evaluated under ISO/IEC 25002:2024 software quality standards. Additionally, I built <strong className="text-white font-medium">ProcLink System</strong>, an enterprise procurement and records management system with a 4-tier approval pipeline that eliminates administrative bottlenecks.
           </p>
 
           <p>
-            I take pride in solving non-trivial problems — from structuring B-Tree search algorithms to optimizing database queries for high efficiency. I am eager to contribute my energy, technical versatility, and dedication to a forward-thinking engineering team.
+            Beyond code, I am a passionate <strong className="text-white font-medium">Art Lover &amp; Charcoal Portrait Artist</strong>, vocalist, and audio editor utilizing tools like <strong className="text-white font-medium">Adobe Audition</strong>. This artistic discipline gives me a unique perspective on user experience: approaching software not merely as lines of syntax, but as an elegant, human-centered composition of visual proportion, harmony, and functional utility.
           </p>
 
           {/* Education Card */}

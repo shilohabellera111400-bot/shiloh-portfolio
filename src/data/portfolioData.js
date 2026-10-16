@@ -3,7 +3,7 @@ export const portfolioData = {
     name: "Shiloh Abellera",
     firstName: "Shiloh",
     lastName: "Abellera",
-    role: "Full-Stack Developer & BSIT Senior",
+    role: "Full-Stack Developer, BSIT Senior & Creative Artist",
     badge: "Available for work · 2026",
     university: "Nueva Ecija University of Science and Technology (NEUST)",
     degree: "Bachelor of Science in Information Technology",
@@ -13,54 +13,54 @@ export const portfolioData = {
     email: "shiloh.abellera111400@gmail.com",
     github: "https://github.com",
     githubUsername: "Shiloh-Abellera",
-    bio: "Full-stack developer & BSIT senior at Nueva Ecija University of Science and Technology. I design and build resilient web systems, digital community portals, and modern software experiences.",
-    quote: "Good software is not just about lines of code; it is about building intuitive solutions that make services accessible, communities stronger, and lives simpler.",
-    photo: "/images/shiloh.jpg",
+    bio: "Full-stack developer, BSIT senior at NEUST, and creative artist. Creator of One-Palayan Kalinga Hub and ProcLink System. I merge engineering precision with artistic vision in web applications, automated institutional workflows, and multimedia design.",
+    quote: "Good software is not just about lines of code; it is about crafting intuitive solutions that make services accessible, communities stronger, and lives simpler.",
+    photo: "/images/shiloh-cutout.png",
     stats: [
-      { label: "Projects Completed", value: "15+" },
-      { label: "Years Coding", value: "3+" },
-      { label: "System Uptime & Quality", value: "99%" },
-      { label: "Honors & Credentials", value: "5+" }
+      { label: "Systems & Apps Built", value: "15+" },
+      { label: "Years Coding & Design", value: "3+" },
+      { label: "Capstone & ISO Rating", value: "99%" },
+      { label: "Honors & Credentials", value: "6+" }
     ]
   },
 
   marqueeSkills: [
-    "PHP", "MySQL", "JavaScript", "React.js", "Tailwind CSS", "REST APIs", 
-    "Python", "HTML5 & CSS3", "Bootstrap", "Node.js", "Git & GitHub", 
-    "Vercel Deployment", "RBAC Security", "Database Normalization", "Java OOP"
+    "PHP", "MySQL (3NF)", "JavaScript", "React.js", "Tailwind CSS", "ProcLink PRMS",
+    "One-Palayan Hub", "REST APIs", "Charcoal Portrait", "Adobe Audition", "Vocal Performance",
+    "Bootstrap 5", "Node.js", "Git & GitHub", "Vercel Deployment", "Row-Level Security"
   ],
 
   projects: [
     {
       id: "01",
-      title: "Barangay Cares — Incident & E-Services Management System",
-      type: "Web Application · Public Governance",
-      summary: "A full-scale community management portal developed to digitize barangay transactions. Enables residents to submit verified complaints, file official document requests (Barangay Clearance, Residency, Indigency), track statuses live, and receive administrative notices. Equipped with a robust admin dashboard for dispute categorization, verification workflows, and audit reporting.",
-      technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap 5", "HTML5/CSS3", "RESTful API", "Session Auth"],
+      title: "One-Palayan Kalinga Hub: Integrated Social Service Management System",
+      type: "Official Capstone Project · E-Governance & Social Welfare",
+      summary: "An integrated web-based social service appointment, housing beneficiary management, and Assistance to Individuals in Crisis Situations (AICS) tracking system developed for the City Social Welfare and Development Office (CSWDO) of Palayan City. Built under the V-Model SDLC and evaluated under ISO/IEC 25002:2024 Software Product Quality Standards, replacing manual paper processes with real-time digital access.",
+      technologies: ["PHP", "MySQL (3NF)", "JavaScript", "HTML5/CSS3", "Bootstrap 5", "Row-Level Security (RLS)", "V-Model SDLC"],
       views: [
         {
-          id: "resident",
-          label: "Resident Portal",
+          id: "beneficiary",
+          label: "Beneficiary Portal",
           icon: "👤",
           badge: "Citizen View",
-          description: "Online filing of incidents, document request cart, real-time ticket tracker, and official announcements feed.",
-          highlights: ["Real-time complaint tracking", "Document request automation", "SMS/Email notification triggers"]
+          description: "Online booking for CSWDO appointments, document pre-verification upload, and real-time status tracking for AICS medical, burial, and financial assistance.",
+          highlights: ["Online appointment reservation", "Real-time AICS claim tracking", "Digital document upload & pre-check"]
         },
         {
-          id: "admin",
-          label: "Admin Dashboard",
+          id: "cswdo-staff",
+          label: "CSWDO Staff Console",
+          icon: "🏛️",
+          badge: "Staff & Social Worker View",
+          description: "Dedicated console for case workers to review applicant documents, manage daily intake queues, approve crisis aid, and monitor housing unit allocations.",
+          highlights: ["Document pre-verification queue", "Housing beneficiary roster & unit allocation", "Direct remarks & SMS dispatch"]
+        },
+        {
+          id: "admin-analytics",
+          label: "LGU Admin Dashboard",
           icon: "⚡",
-          badge: "Barangay Official View",
-          description: "Comprehensive administration console with incident dispatch metrics, dispute logs, resident database, and audit history.",
-          highlights: ["Automated dispute categorization", "Official PDF clearance generator", "Citizen identity verification queue"]
-        },
-        {
-          id: "verification",
-          label: "Verification Center",
-          icon: "🛡️",
-          badge: "Security & Records",
-          description: "Resident verification and ID matching mechanism preventing fraudulent requests and securing public records.",
-          highlights: ["XSS input sanitization", "Government ID matching", "Encrypted session tokens"]
+          badge: "Executive City Admin",
+          description: "Centralized administrative and reporting engine delivering city-wide social welfare metrics and audit transparency for Palayan City government.",
+          highlights: ["ISO/IEC 25002:2024 compliant audit logs", "AICS disbursement statistical reports", "Role-based user permissions"]
         }
       ],
       githubLink: "https://github.com",
@@ -68,9 +68,71 @@ export const portfolioData = {
     },
     {
       id: "02",
+      title: "ProcLink System — Multi-Tier Procurement & Records Management",
+      type: "Enterprise Web Application · Institutional Workflow Automation",
+      summary: "A robust procurement and supply requisition management system (PRMS) designed to eliminate bureaucratic bottlenecks in institutional supply management. Features an automated sequential approval workflow (Procurement ➔ Budget Office ➔ University President / Executive ➔ Final Supply Release) with comprehensive audit logging.",
+      technologies: ["PHP", "MariaDB / MySQL", "JavaScript", "REST APIs", "Session Authentication", "InfinityFree Cloud"],
+      views: [
+        {
+          id: "requisition",
+          label: "Requisition Portal",
+          icon: "📦",
+          badge: "Department Requester",
+          description: "Supply catalog browser, custom request cart, budget allocation checks, and urgency priority flags.",
+          highlights: ["Intuitive supply cart ordering", "Real-time request stage indicator", "Department budget limits"]
+        },
+        {
+          id: "workflow",
+          label: "Multi-Tier Approval Pipeline",
+          icon: "✍️",
+          badge: "Approval Hierarchy",
+          description: "Strict 4-stage verification: Procurement validation, Budget Officer sign-off, President approval, and Storekeeper release.",
+          highlights: ["Automated approval state transitions", "Executive signature & remarks logs", "Instant clarification requests"]
+        },
+        {
+          id: "inventory",
+          label: "Records & Inventory Audit",
+          icon: "📊",
+          badge: "Procurement Officer",
+          description: "Real-time inventory deduction, purchase order generation, vendor ledger, and historical exportable audit logs.",
+          highlights: ["Stock level auto-deductions", "Voucher PDF generation", "Comprehensive transaction trail"]
+        }
+      ],
+      githubLink: "https://github.com",
+      liveLink: "#"
+    },
+    {
+      id: "03",
+      title: "Barangay Cares — Incident & Document Request System",
+      type: "Full-Stack Web Application · Public Administration",
+      summary: "A localized municipal e-services platform facilitating citizen complaint triage and official barangay document requests (Clearance, Residency, Indigency) with automated verification and administrative reply handling.",
+      technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap 5", "HTML5/CSS3", "RESTful API"],
+      views: [
+        {
+          id: "resident",
+          label: "Resident Portal",
+          icon: "🏘️",
+          badge: "Citizen View",
+          description: "Online filing of incidents, document request cart, live ticket tracker, and official announcements feed.",
+          highlights: ["Real-time incident tracking", "Document request cart", "Community notification alerts"]
+        },
+        {
+          id: "admin",
+          label: "Admin Console",
+          icon: "🛡️",
+          badge: "Barangay Official View",
+          description: "Case triage dashboard, dispute logs, resident registry, and official document issuance generator.",
+          highlights: ["Dispute categorization", "PDF document stamping", "Citizen verification audit"]
+        }
+      ],
+      githubLink: "https://github.com",
+      liveLink: "#"
+    },
+    {
+      id: "04",
       title: "WeCare — Healthcare Clinic & Appointment Management System",
       type: "Web Application · HealthTech",
-      summary: "An integrated healthcare appointment and triage records system designed for local outpatient clinics. Allows patients to select specialists, book available calendar slots, and review medical history. Provides clinic personnel with an automated daily schedule queue, digital prescriptions, and patient records management.",
+      summary: "An outpatient appointment scheduling and electronic medical records (EMR) system featuring doctor calendar synchronization, patient history archives, and digital prescription tracking.",
       technologies: ["React.js", "Node.js", "MySQL", "Tailwind CSS", "REST API", "JWT Auth"],
       views: [
         {
@@ -78,8 +140,8 @@ export const portfolioData = {
           label: "Patient Portal",
           icon: "🩺",
           badge: "Patient View",
-          description: "Doctor directory search, intuitive calendar scheduling, medical history vault, and consultation reminders.",
-          highlights: ["Instant slot reservations", "Appointment reminders", "Digital medical history"]
+          description: "Doctor directory search, calendar booking, medical consultation history, and digital prescription access.",
+          highlights: ["Direct slot booking", "Medical history records", "Consultation reminders"]
         },
         {
           id: "doctor",
@@ -88,68 +150,6 @@ export const portfolioData = {
           badge: "Doctor View",
           description: "Daily patient queue manager, consultation diagnostics recorder, and electronic prescription generator.",
           highlights: ["Live patient queue", "E-Prescription generator", "Diagnostic history"]
-        },
-        {
-          id: "reception",
-          label: "Clinic Reception",
-          icon: "📋",
-          badge: "Staff View",
-          description: "Triage check-in desk, billing summary generator, and doctor availability calendar management.",
-          highlights: ["Fast-track check-in", "Billing breakdown", "Doctor schedule roster"]
-        }
-      ],
-      githubLink: "https://github.com",
-      liveLink: "#"
-    },
-    {
-      id: "03",
-      title: "EcoTrack — Smart IoT Energy & Sustainability Dashboard",
-      type: "IoT Web Application · Sustainability",
-      summary: "A modern energy intelligence dashboard that aggregates household and laboratory power consumption. Visualizes real-time kilowatt-hour draw, predicts monthly utility expenditures using local energy tariffs, and alerts users of phantom standby power waste to optimize electrical efficiency.",
-      technologies: ["React.js", "Tailwind CSS", "JavaScript ES6", "Chart.js", "Node.js", "REST APIs"],
-      views: [
-        {
-          id: "analytics",
-          label: "Telemetry Live",
-          icon: "📊",
-          badge: "Real-time Telemetry",
-          description: "Interactive consumption graphs by hour, day, and room with peak-rate alert indicators.",
-          highlights: ["Interactive consumption timeline", "Peak power spike warnings", "Room-by-room breakdown"]
-        },
-        {
-          id: "forecaster",
-          label: "Cost Forecaster",
-          icon: "💡",
-          badge: "Billing Analytics",
-          description: "Algorithmic billing projection engine based on tiered utility formulas and historical usage patterns.",
-          highlights: ["Tiered tariff calculator", "Monthly bill estimator", "Energy reduction targets"]
-        }
-      ],
-      githubLink: "https://github.com",
-      liveLink: "#"
-    },
-    {
-      id: "04",
-      title: "CampusLink — University Lost & Found with Split-Code Handover",
-      type: "Mobile & Web · Security & Community",
-      summary: "A student-centric property recovery platform engineered to eliminate false ownership claims. Features an innovative mutual split-code verification mechanism: when an item is claimed, the claimant and finder each hold complementary 2-digit PIN segments that complete only upon verified physical handover.",
-      technologies: ["JavaScript", "PHP", "MySQL", "Tailwind CSS", "Firebase", "REST APIs"],
-      views: [
-        {
-          id: "finder",
-          label: "Finder & Claimant",
-          icon: "🔍",
-          badge: "Student View",
-          description: "Item catalog with category search, location filtering, and safe in-app peer communication.",
-          highlights: ["Photo surrender uploads", "Campus building tagging", "Direct peer messaging"]
-        },
-        {
-          id: "verification",
-          label: "Split-Code Handover",
-          icon: "🤝",
-          badge: "Security Verification",
-          description: "Cryptographic PIN combination system ensuring accountability and legitimate return of student valuables.",
-          highlights: ["Mutual 4-digit code matching", "Time-stamped return logs", "Campus security oversight"]
         }
       ],
       githubLink: "https://github.com",
@@ -159,102 +159,116 @@ export const portfolioData = {
 
   achievements: [
     {
-      id: "ach-1",
-      category: "Academic",
+      id: "ach-capstone",
+      category: "Capstone",
       icon: "🏆",
+      title: "Lead Architect & Developer: One-Palayan Kalinga Hub",
+      institution: "CSWDO Palayan City & NEUST CICT",
+      year: "2025 - 2026",
+      summary: "Designed and engineered the official web-based social service appointment, housing beneficiary management, and AICS tracking system for CSWDO Palayan City, tested according to ISO/IEC 25002:2024 software product quality standards.",
+      details: [
+        "Architected complete 3NF normalized MySQL database with Row-Level Security (RLS) for citizen data privacy",
+        "Digitized AICS crisis intake, eliminating physical queues and reducing turnaround from days to hours",
+        "Evaluated with stellar ratings by IT experts and CSWDO social workers under ISO/IEC 25002 standards"
+      ]
+    },
+    {
+      id: "ach-proclink",
+      category: "Technical",
+      icon: "⚡",
+      title: "ProcLink PRMS Workflow Architecture Recognition",
+      institution: "Enterprise Systems Showcase / Institutional Software",
+      year: "2026",
+      summary: "Developed the ProcLink Procurement & Records Management System, automating a 4-tier approval pipeline (Procurement ➔ Budget ➔ President ➔ Release) with real-time audit trails.",
+      details: [
+        "Built dynamic approval state machine resolving inter-departmental requisition delays",
+        "Implemented session authorization and automated inventory level tracking",
+        "Deployed and tested on live web cloud infrastructure"
+      ]
+    },
+    {
+      id: "ach-arts",
+      category: "Creative",
+      icon: "🎨",
+      title: "Fine Art & Charcoal Portrait Master Artist",
+      institution: "Creative Portfolio & Visual Arts",
+      year: "2022 - Present",
+      summary: "Accomplished realism charcoal portrait artist, blending anatomical accuracy, lighting precision, and artistic discipline into user experience and UI interface craft.",
+      details: [
+        "Skilled in hyper-realistic charcoal shading, fine detail rendering, and facial proportions",
+        "Vocal performance and singing enthusiast, exploring creative acoustic interpretation",
+        "Audio engineering with Adobe Audition: vocal mastering, noise suppression, and podcast editing"
+      ]
+    },
+    {
+      id: "ach-dean",
+      category: "Academic",
+      icon: "🎖️",
       title: "Dean's Lister & Academic Honors",
       institution: "College of Information and Communications Technology (NEUST)",
       year: "2023 - 2026",
-      summary: "Awarded Dean's List honors for consecutive academic terms, demonstrating consistent scholastic excellence across Advanced Database Systems, Web Systems & Technologies, and Software Engineering.",
+      summary: "Maintained consistent Dean's List academic honors across core computer science and software development subjects including Advanced Database Systems, Web Systems, and System Analysis.",
       details: [
-        "Maintained top-tier GWA in core computer science & information technology courses",
-        "Recognized for exemplary performance in Relational Database Management and Object-Oriented Programming",
-        "Collaborated with faculty on student mentorship and academic review programs"
+        "Consistent top-tier scholastic standing in CICT department",
+        "Recognized for excellence in relational data modeling and software lifecycle methodologies",
+        "Active peer mentor in web development and algorithmic problem solving"
       ]
     },
     {
-      id: "ach-2",
-      category: "Capstone",
-      icon: "🥇",
-      title: "Best in Capstone & System Architecture Recognition",
-      institution: "NEUST CICT Annual System Exhibition",
-      year: "2025",
-      summary: "Awarded top honors for the architectural design and societal impact of the Barangay Incident and Document Management System, recognized for bridging community bureaucracy through technology.",
-      details: [
-        "Praised by academic panel for database normalization (3NF) and security hygiene against SQL injection and XSS",
-        "Demonstrated a complete full-stack workflow resolving document turnaround times from days to hours",
-        "Featured as an exemplary senior capstone project for regional public-sector automation"
-      ]
-    },
-    {
-      id: "ach-3",
+      id: "ach-cert",
       category: "Certification",
       icon: "📜",
-      title: "Full-Stack Web Development Credential",
-      institution: "IT Specialist & Development Certification",
+      title: "Full-Stack Web Development & System Architecture Credential",
+      institution: "Professional Web Technology & Software Certification",
       year: "2025",
-      summary: "Comprehensive certification covering end-to-end web architecture: frontend responsive engineering, backend API development with PHP & Node.js, and relational database management.",
+      summary: "Comprehensive certification validating full-stack engineering proficiency: PHP backend services, MySQL database modeling, responsive modern frontend, and REST APIs.",
       details: [
-        "Proficiency in RESTful API lifecycle, authentication states, and CORS policies",
-        "Practical mastery of modern CSS frameworks, responsive layouts, and cross-browser compatibility",
-        "Rigorous automated testing, database migrations, and production deployment"
+        "Proficiency in RESTful API lifecycle, secure session management, and CSRF/XSS defense",
+        "Mastery of modern CSS frameworks, responsive layouts, and cross-browser reliability",
+        "Cloud deployment experience with Vercel and production databases"
       ]
     },
     {
-      id: "ach-4",
-      category: "Technical",
-      icon: "🛡️",
-      title: "Database Engineering & SQL Optimization Specialist",
-      institution: "NEUST Advanced Database Seminar & Lab",
-      year: "2024",
-      summary: "Demonstrated advanced competence in complex SQL queries, index optimization, multi-table transactions, ACID compliance, and database administration.",
-      details: [
-        "Architected relational schemas handling high concurrent queries with minimal latency",
-        "Implemented database trigger routines and stored procedures for audit logging",
-        "Formulated backup, recovery, and data replication strategies"
-      ]
-    },
-    {
-      id: "ach-5",
+      id: "ach-summit",
       category: "Leadership",
       icon: "🚀",
-      title: "National IT Youth Summit Delegate",
+      title: "National IT Youth Summit Student Delegate",
       institution: "Philippine Society of Information Technology Educators (PSITE)",
       year: "2025",
-      summary: "Selected as an official student delegate representing NEUST, engaging in cutting-edge panels on cloud computing, cybersecurity resilience, and modern software craft.",
+      summary: "Represented NEUST as an official student delegate at nationwide technology conventions, exploring modern cloud deployments, cybersecurity, and digital public administration.",
       details: [
-        "Participated in hands-on workshops on Vercel cloud CI/CD and modern web microservices",
-        "Collaborated with student engineers across Central Luzon in competitive software hack challenges",
-        "Networked with industry tech leads and alumni mentors"
+        "Participated in workshops on modern web architecture and cloud CI/CD pipelines",
+        "Collaborated with developers across Central Luzon on public sector digital transformation",
+        "Engaged in technical symposiums on AI and data privacy compliance"
       ]
     }
   ],
 
   skills: [
     { number: "01", name: "Full-Stack Web Development", category: "Full-Stack" },
-    { number: "02", name: "PHP & Backend Architecture", category: "Backend" },
-    { number: "03", name: "MySQL & Relational Databases", category: "Database" },
-    { number: "04", name: "JavaScript (ES6+) & DOM", category: "Frontend" },
-    { number: "05", name: "React.js & Single Page Apps", category: "Frontend" },
-    { number: "06", name: "Tailwind CSS & Modern UI", category: "Frontend" },
-    { number: "07", name: "HTML5 & Semantic Markup", category: "Frontend" },
-    { number: "08", name: "CSS3 & Responsive Design", category: "Frontend" },
-    { number: "09", name: "RESTful APIs & Endpoints", category: "Backend" },
-    { number: "10", name: "Bootstrap 5 Framework", category: "Frontend" },
-    { number: "11", name: "Node.js & Express.js", category: "Backend" },
-    { number: "12", name: "Database Normalization (3NF)", category: "Database" },
-    { number: "13", name: "Role-Based Access Control (RBAC)", category: "Security" },
-    { number: "14", name: "Python Programming & Algorithms", category: "Core" },
-    { number: "15", name: "Data Structures & B-Trees", category: "Core" },
-    { number: "16", name: "Java Object-Oriented Programming", category: "Core" },
-    { number: "17", name: "Git Version Control & GitHub", category: "Tools" },
-    { number: "18", name: "Vercel Cloud Deployment", category: "Tools" },
-    { number: "19", name: "XSS & SQL Injection Defense", category: "Security" },
-    { number: "20", name: "UI/UX Wireframing & Design", category: "Design" },
-    { number: "21", name: "System Testing & QA Debugging", category: "DevOps" },
-    { number: "22", name: "Apache & XAMPP Configuration", category: "Tools" },
-    { number: "23", name: "Technical Documentation", category: "Professional" },
-    { number: "24", name: "Problem Solving & Analytical Thinking", category: "Professional" }
+    { number: "02", name: "PHP & MVC Backend Logic", category: "Backend" },
+    { number: "03", name: "MySQL (3NF) & Relational DBs", category: "Database" },
+    { number: "04", name: "One-Palayan & ProcLink PRMS", category: "Full-Stack" },
+    { number: "05", name: "Charcoal Portrait Art (Realism)", category: "Creative" },
+    { number: "06", name: "Audio Editing (Adobe Audition)", category: "Creative" },
+    { number: "07", name: "Vocal Performance & Singing", category: "Creative" },
+    { number: "08", name: "JavaScript (ES6+) & DOM", category: "Frontend" },
+    { number: "09", name: "React.js & Single Page Apps", category: "Frontend" },
+    { number: "10", name: "Tailwind CSS & Responsive UI", category: "Frontend" },
+    { number: "11", name: "RESTful APIs & Endpoints", category: "Backend" },
+    { number: "12", name: "Bootstrap 5 Framework", category: "Frontend" },
+    { number: "13", name: "HTML5 & Semantic Markup", category: "Frontend" },
+    { number: "14", name: "CSS3 Flexbox, Grid & Animations", category: "Frontend" },
+    { number: "15", name: "Row-Level Security (RLS) & RBAC", category: "Security" },
+    { number: "16", name: "Database Normalization (3NF)", category: "Database" },
+    { number: "17", name: "Python Programming & B-Trees", category: "Core" },
+    { number: "18", name: "Java Object-Oriented Programming", category: "Core" },
+    { number: "19", name: "Git Version Control & GitHub", category: "Tools" },
+    { number: "20", name: "Vercel Cloud Deployment", category: "Tools" },
+    { number: "21", name: "XSS & SQL Injection Defense", category: "Security" },
+    { number: "22", name: "V-Model SDLC & ISO/IEC 25002", category: "Professional" },
+    { number: "23", name: "System Testing & QA Debugging", category: "DevOps" },
+    { number: "24", name: "Visual Arts, Shading & UI Aesthetics", category: "Creative" }
   ],
 
   workProcess: [
@@ -262,36 +276,36 @@ export const portfolioData = {
       number: "01",
       phase: "Discover",
       icon: "Search",
-      summary: "Understanding the problem, interviewing stakeholders, and gathering operational requirements.",
-      details: "Before writing any code, I analyze user pain points, system constraints, and expected business outcomes to define clear technical specifications."
+      summary: "Stakeholder interviews, user pain-point analysis, and operational requirement gathering.",
+      details: "Like in One-Palayan Hub, I start by collaborating with agency heads and end-users to understand the true administrative bottleneck before writing a single line of code."
     },
     {
       number: "02",
       phase: "Ideate",
       icon: "Lightbulb",
-      summary: "Architecting the entity-relationship diagrams (ERD), wireframes, and data structures.",
-      details: "Mapping out normalized database schemas, component hierarchies, user journey wireframes, and API endpoints for seamless scalability."
+      summary: "Architecting entity-relationship models (3NF), data flow diagrams, and user journey wireframes.",
+      details: "Designing third-normal form database schemas, role permission matrices (Residents, Staff, Admin), and sequential workflow pipelines (as seen in ProcLink PRMS)."
     },
     {
       number: "03",
       phase: "Design",
       icon: "Palette",
-      summary: "Crafting intuitive, accessible, and responsive user interfaces with crisp visual hierarchy.",
-      details: "Designing modern dark & crimson themes, ergonomic forms, responsive card layouts, and micro-interactions that delight users."
+      summary: "Crafting intuitive, accessible, and responsive user interfaces with artistic precision.",
+      details: "Leveraging my background in charcoal realism and visual arts to create ergonomic layouts, balanced typography, and responsive modern dark aesthetics."
     },
     {
       number: "04",
       phase: "Develop",
       icon: "Code2",
-      summary: "Writing clean, maintainable, and secure code with robust server-side validation.",
-      details: "Building responsive React & PHP modules, integrating RESTful APIs, securing endpoints against XSS/injections, and verifying database transactions."
+      summary: "Writing clean, maintainable, and secure PHP/React code with verified backend logic.",
+      details: "Implementing RESTful APIs, row-level access control, input sanitization against XSS/SQLi, and session token authentication."
     },
     {
       number: "05",
       phase: "Deliver",
       icon: "Send",
-      summary: "Rigorous system testing, continuous deployment on Vercel, and comprehensive documentation.",
-      details: "Conducting multi-browser testing, mobile responsiveness checks, automated GitHub CI/CD pipeline triggers, and deploying live to production."
+      summary: "Rigorous testing under ISO/IEC 25002:2024 standards, Vercel deployment, and user training.",
+      details: "Executing unit, integration, and user acceptance testing (UAT) with real stakeholders, followed by automated GitHub and Vercel cloud deployment."
     }
   ],
 
@@ -303,9 +317,9 @@ export const portfolioData = {
       period: "2022 - 2026 (Graduating Senior)",
       status: "In Progress · 4th Year Senior",
       highlights: [
-        "Specializing in Web and Mobile Systems, Database Engineering, and Software Design",
-        "Consistent academic honors and Dean's Lister standing",
-        "Lead developer on community-focused capstone project 'Barangay Cares'"
+        "Lead developer and researcher for Capstone Project 'One-Palayan Kalinga Hub' for CSWDO Palayan City",
+        "Consistent academic honors and Dean's Lister standing throughout academic career",
+        "Specializing in Web Systems Architecture, Enterprise Workflow Automation, and Relational Database Engineering"
       ]
     }
   ]
