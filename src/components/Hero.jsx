@@ -1,217 +1,170 @@
 import React from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { ArrowRight, ExternalLink, Sparkles, MapPin, GraduationCap, Palette, Music, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, Download, FolderCode, Mail } from 'lucide-react';
 
-export default function Hero({ onOpenVercelGuide }) {
+export default function Hero({ onOpenResumeModal }) {
   const { personalInfo } = portfolioData;
 
   return (
-    <section id="top" className="relative pt-32 sm:pt-40 lg:pt-48 pb-16 sm:pb-24 px-5 sm:px-6 overflow-hidden">
-      {/* Background ambient lighting effects matching reference */}
-      <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -left-40 h-[40rem] w-[40rem] rounded-full bg-red-600/10 blur-[130px]" />
-        <div className="absolute top-1/3 -right-40 h-[38rem] w-[38rem] rounded-full bg-rose-600/10 blur-[140px]" />
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 h-[32rem] w-[32rem] rounded-full bg-red-950/25 blur-[160px]" />
-        <div className="absolute inset-0 bg-grid-pattern opacity-100" />
-      </div>
+    <section id="top" className="relative pt-16 sm:pt-20 pb-10 sm:pb-14 px-5 sm:px-8 bg-gradient-to-b from-[#082216] via-[#0b2b1c] to-[#082015] text-[#dfd7c7] overflow-hidden border-b border-[#c5a059]/20">
+      
+      {/* Background Emerald Ambient Velvet Glow */}
+      <div className="absolute top-0 right-1/4 w-[700px] h-[700px] rounded-full bg-radial from-[#155a36]/65 via-[#0e3a23]/35 to-transparent blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 left-10 w-[500px] h-[500px] rounded-full bg-[#1b6b42]/20 blur-[130px] pointer-events-none" />
 
-      <div className="mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Column: Headline and Bio */}
-          <div className="lg:col-span-7 min-w-0">
-            {/* Status Pill */}
-            <div className="inline-flex items-center gap-2.5 text-[11px] sm:text-xs uppercase tracking-[0.25em] text-neutral-300 mb-6 border border-white/10 bg-white/[0.03] backdrop-blur-md rounded-full px-4 py-1.5 shadow-inner">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-              </span>
-              <span>{personalInfo.badge}</span>
-            </div>
+      <div className="mx-auto max-w-7xl relative z-10">
 
-            {/* Big Display Name */}
-            <h1 className="font-serif text-[clamp(2.8rem,10vw,5.5rem)] leading-[0.92] tracking-tight text-white">
-              {personalInfo.firstName}
-              <br />
-              <span className="italic bg-gradient-to-r from-red-500 via-rose-400 to-red-400 bg-clip-text text-transparent drop-shadow-sm">
-                {personalInfo.lastName}.
-              </span>
-            </h1>
+        {/* 1. BIG WORD "PORTFOLIO" PLACED AFTER THE HEADER (Adjusted size so full word is 100% visible) */}
+        <div className="relative w-full pt-1 sm:pt-3 select-none pointer-events-none text-center overflow-visible">
+          <h1 className="font-cinzel text-[11vw] sm:text-[11.5vw] lg:text-[11.8vw] leading-[0.88] tracking-[0.02em] uppercase font-normal text-transparent bg-clip-text bg-gradient-to-b from-[#f5d77f] via-[#c5a059] to-[#6d5622] drop-shadow-[0_10px_35px_rgba(0,0,0,0.85)] inline-block whitespace-nowrap">
+            PORTFOLIO
+          </h1>
+        </div>
 
-            {/* Subtitle / Bio */}
-            <p className="mt-6 sm:mt-7 max-w-xl text-base sm:text-lg text-neutral-300 leading-relaxed font-sans font-light">
-              Full-stack developer, BSIT senior at{' '}
-              <span className="text-white font-medium">Nueva Ecija University of Science and Technology</span>, 
-              and creative artist. Lead developer of <strong className="text-red-400 font-medium">One-Palayan Kalinga Hub</strong> and <strong className="text-red-400 font-medium">ProcLink System</strong>.
+        {/* 2. CENTRAL COMPOSITION: Clean Grid Layout with Zero Side-Column Collisions */}
+        <div className="relative pt-2 sm:pt-4 grid grid-cols-1 lg:grid-cols-12 gap-6 xl:gap-8 items-end z-10">
+          
+          {/* Left Column: Hello, Introduction & Actions (Adjusted upward for ideal vertical balance) */}
+          <div className="lg:col-span-4 pb-2 sm:pb-4 order-2 lg:order-1 z-20 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-16 xl:-translate-y-20">
+            
+            <p className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#c5a059] mb-2 font-semibold">
+              HELLO, I'M
             </p>
 
-            {/* Creative Tagline */}
-            <div className="mt-4 flex flex-wrap items-center gap-2.5 text-xs text-neutral-300">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10">
-                <Palette className="w-3.5 h-3.5 text-amber-400" />
-                <span>Charcoal Portrait Artist</span>
+            <h2 className="font-cinzel text-4xl sm:text-5xl lg:text-[3.3rem] xl:text-[3.8rem] font-normal tracking-tight text-[#dfd7c7] leading-[0.95] mb-3.5">
+              SHILOH<br />
+              <span className="font-editorial-serif italic text-[#e5c158] font-light">
+                ABELLERA
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10">
-                <Music className="w-3.5 h-3.5 text-rose-400" />
-                <span>Vocalist &amp; Audio Editing</span>
-              </span>
+            </h2>
+
+            {/* Official Title Pill */}
+            <div className="inline-block px-3 py-1 rounded-md bg-[#0d2f1f] border border-[#c5a059]/35 text-[#dfd7c7] text-[11px] font-mono tracking-wider uppercase mb-4 shadow-sm">
+              FULL STACK DEVELOPER &bull; GRAPHIC DESIGNER
             </div>
 
-            {/* Primary Action Buttons */}
-            <div className="mt-8 sm:mt-9 flex flex-wrap items-center gap-3.5">
+            {/* Professional Statement */}
+            <p className="text-xs sm:text-[13px] text-[#dfd7c7]/85 font-light leading-relaxed font-sans max-w-sm mb-6">
+              "I am a dedicated and creative IT professional who enjoys transforming ideas into functional digital experiences. Combining technical knowledge with visual creativity, I continuously explore new technologies, develop meaningful solutions, and create designs with purpose."
+            </p>
+
+            {/* Action Buttons */}
+            <div className="flex flex-wrap items-center gap-2.5 pt-1">
               <a
                 href="#work"
-                className="inline-flex items-center gap-2 rounded-full bg-red-600 text-white px-6 py-3.5 text-sm font-semibold hover:bg-red-500 transition-all shadow-[0_0_30px_-6px_#ef4444] active:scale-95"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#c5a059] to-[#aa8028] text-[#071d12] text-[11px] font-mono font-bold tracking-wider uppercase hover:brightness-110 transition-all shadow-[0_0_18px_rgba(197,160,89,0.35)] active:scale-95"
               >
-                <span>View One-Palayan &amp; Projects</span>
-                <ArrowRight className="w-4 h-4" />
+                <FolderCode className="w-3.5 h-3.5" />
+                <span>EXPLORE WORK</span>
+                <ArrowUpRight className="w-3 h-3 stroke-[2.5]" />
               </a>
 
               <a
-                href="#achievements"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-5 sm:px-6 py-3.5 text-sm font-medium text-neutral-200 hover:bg-white/10 hover:border-white/30 transition-all active:scale-95"
+                href={personalInfo.resumeUrl}
+                download="Shiloh_Abellera_Resume.pdf"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#c5a059]/35 bg-[#0d2f1f] text-[#dfd7c7] text-[11px] font-mono tracking-wider uppercase hover:border-[#e5c158] hover:text-[#e5c158] transition-all"
               >
-                <span>My Achievements</span>
-                <Sparkles className="w-4 h-4 text-amber-400" />
+                <Download className="w-3 h-3 text-[#c5a059]" />
+                <span>RESUME</span>
               </a>
 
-              <button
-                onClick={onOpenVercelGuide}
-                className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-950/30 px-5 py-3.5 text-sm font-medium text-red-300 hover:bg-red-900/40 hover:border-red-500/60 transition-all active:scale-95 cursor-pointer"
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-white/10 text-[11px] font-mono tracking-wider uppercase text-[#dfd7c7]/75 hover:border-[#c5a059] hover:text-white transition-all"
               >
-                <span>Deploy to Vercel</span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </button>
+                <Mail className="w-3.5 h-3.5 text-[#c5a059]" />
+                <span>COLLABORATE</span>
+              </a>
             </div>
 
-            {/* Metadata Pills */}
-            <div className="mt-9 flex flex-wrap items-center gap-x-4 sm:gap-x-5 gap-y-2 text-[11px] sm:text-xs uppercase tracking-widest text-neutral-400 border-t border-white/10 pt-6">
-              <span className="flex items-center gap-1.5 text-neutral-300 font-medium">
-                <GraduationCap className="w-3.5 h-3.5 text-red-400" />
-                {personalInfo.year}
-              </span>
-              <span className="h-1 w-1 rounded-full bg-neutral-600" />
-              <span className="text-neutral-300 font-medium">NEUST CICT</span>
-              <span className="h-1 w-1 rounded-full bg-neutral-600" />
-              <span className="flex items-center gap-1 text-neutral-300 font-medium">
-                <MapPin className="w-3.5 h-3.5 text-red-400" />
-                {personalInfo.location}
-              </span>
+          </div>
+
+          {/* Center Column: Shiloh's Hero Portrait (Refined, perfectly balanced centerpiece scale) */}
+          <div className="lg:col-span-5 relative flex flex-col items-center justify-end order-1 lg:order-2 -mt-10 sm:-mt-16 lg:-mt-20 xl:-mt-24">
+            
+            {/* Deep Emerald Velvet Ambient Glow Circle behind the portrait */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[390px] lg:w-[460px] xl:w-[500px] aspect-square rounded-full bg-radial from-[#155a36]/85 via-[#0e3b24]/50 to-transparent blur-[55px] z-0 pointer-events-none" />
+
+            {/* Shiloh's Image in Front of "PORTFOLIO" with refined, graceful scale */}
+            <div className="relative z-10 w-full max-w-[360px] sm:max-w-[430px] lg:max-w-[490px] xl:max-w-[530px] flex flex-col items-center justify-end">
+              
+              {/* Rotating Luxury Circular Stamp positioned gracefully right beside the right shoulder */}
+              <div className="absolute top-[62%] sm:top-[64%] lg:top-[66%] -right-2 sm:-right-4 lg:-right-6 xl:-right-8 z-20 pointer-events-none">
+                <div className="relative w-20 h-20 sm:w-22 sm:h-22 lg:w-24 lg:h-24 flex items-center justify-center">
+                  <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-slow">
+                    <path
+                      id="luxuryCenterStamp"
+                      d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                      fill="none"
+                    />
+                    <text className="text-[8.5px] font-cinzel font-semibold tracking-[0.25em] fill-[#c5a059] uppercase">
+                      <textPath href="#luxuryCenterStamp">
+                        • DESIGNING PURPOSE • BUILDING LEGACY •
+                      </textPath>
+                    </text>
+                  </svg>
+                  {/* Center 8-point gold star */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-[#e5c158]" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Shiloh's Hero Cutout Centerpiece */}
+              <img
+                src="/images/shiloh-blazer-cutout.png?v=2"
+                alt="Shiloh Abellera"
+                className="w-full h-auto max-h-[520px] sm:max-h-[590px] lg:max-h-[650px] xl:max-h-[690px] object-contain object-bottom filter contrast-[1.05] brightness-[0.98] drop-shadow-[0_25px_45px_rgba(0,0,0,0.85)] transition-all duration-500"
+                loading="eager"
+              />
+            </div>
+
+          </div>
+
+          {/* Right Column: Stacked Labels, Location, Verified Stats & Live Status (Adjusted upward in symmetry with left side) */}
+          <div className="lg:col-span-3 pb-2 sm:pb-4 flex flex-col justify-end text-left lg:text-right order-3 z-20 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-16 xl:-translate-y-20">
+            
+            {/* Small Stacked Professional Labels */}
+            <div className="space-y-1 mb-6 font-mono text-[10px] uppercase tracking-[0.28em] text-[#c5a059]">
+              <p>FULL STACK DEVELOPMENT</p>
+              <p>UI/UX DESIGN</p>
+              <p>CREATIVE STRATEGY</p>
             </div>
 
             {/* Quick Stats Grid */}
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {personalInfo.stats.map((stat, idx) => (
-                <div
-                  key={idx}
-                  className="p-3 sm:p-3.5 rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm hover:border-red-500/30 transition-all"
-                >
-                  <div className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-center gap-1">
-                    {stat.value}
-                  </div>
-                  <div className="text-[11px] sm:text-xs text-neutral-400 mt-0.5 leading-snug">
-                    {stat.label}
-                  </div>
+            <div className="space-y-3 mb-6">
+              {personalInfo.stats.map((s, idx) => (
+                <div key={idx} className="space-y-0.5">
+                  <span className="font-cinzel text-xl sm:text-2xl text-[#e5c158] font-bold block leading-none">
+                    {s.value}
+                  </span>
+                  <span className="text-[10px] font-mono uppercase text-[#dfd7c7]/65 tracking-wider">
+                    {s.label}
+                  </span>
                 </div>
               ))}
             </div>
-          </div>
 
-          {/* Right Column: Hero Profile with GLOWING HEXAGON BACKGROUND */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[20rem] sm:max-w-[24rem] aspect-[4/5] flex items-center justify-center">
-              {/* Layer 1: Ambient Red/Ruby Pulsing Halo behind the hexagon */}
-              <div className="absolute inset-0 -m-6 bg-radial from-red-600/40 via-red-900/20 to-transparent blur-3xl animate-pulse" />
+            <div className="w-10 h-px bg-[#c5a059]/30 lg:ml-auto mb-4" />
 
-              {/* Layer 2: Rotating Cyber Hexagon Wireframe SVG */}
-              <svg
-                viewBox="0 0 400 460"
-                className="absolute inset-0 w-full h-full pointer-events-none drop-shadow-[0_0_25px_rgba(239,68,68,0.7)]"
-                fill="none"
-              >
-                {/* Outer Dashed Glowing Hexagon */}
-                <polygon
-                  points="200,10 380,115 380,345 200,450 20,345 20,115"
-                  stroke="#ef4444"
-                  strokeWidth="2.5"
-                  strokeDasharray="8 6"
-                  strokeOpacity="0.8"
-                  className="animate-[spin_40s_linear_infinite] origin-center"
-                />
-
-                {/* Secondary Accent Hexagon */}
-                <polygon
-                  points="200,22 368,122 368,338 200,438 32,338 32,122"
-                  stroke="#f87171"
-                  strokeWidth="1.5"
-                  strokeOpacity="0.4"
-                />
-
-                {/* Hexagon Corner Energy Nodes */}
-                <circle cx="200" cy="10" r="4.5" fill="#ef4444" className="shadow-[0_0_10px_#ef4444]" />
-                <circle cx="380" cy="115" r="4.5" fill="#ef4444" />
-                <circle cx="380" cy="345" r="4.5" fill="#ef4444" />
-                <circle cx="200" cy="450" r="4.5" fill="#ef4444" />
-                <circle cx="20,345" r="4.5" fill="#ef4444" />
-                <circle cx="20,115" r="4.5" fill="#ef4444" />
-              </svg>
-
-              {/* Layer 3: Main Glowing Hexagon Container Base */}
-              <div
-                className="absolute inset-4 overflow-hidden shadow-[0_0_50px_rgba(239,68,68,0.35)]"
-                style={{
-                  clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-                  background: 'linear-gradient(145deg, rgba(239,68,68,0.25) 0%, rgba(20,20,26,0.95) 45%, #09090c 100%)',
-                }}
-              >
-                {/* Tech grid texture inside hexagon */}
-                <div className="absolute inset-0 bg-grid-pattern opacity-40" />
-                
-                {/* Central radial energy spotlight behind Shiloh's head */}
-                <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/4 w-52 h-52 bg-gradient-to-b from-red-500/40 via-red-600/15 to-transparent rounded-full blur-2xl" />
-              </div>
-
-              {/* Layer 4: Shiloh's Background-Removed Cutout Portrait */}
-              <div className="relative z-10 w-full h-full flex items-end justify-center pb-2">
-                <img
-                  src={personalInfo.photo}
-                  alt="Portrait of Shiloh Abellera"
-                  className="w-[88%] sm:w-[84%] max-h-[96%] object-contain object-bottom drop-shadow-[0_15px_30px_rgba(0,0,0,0.9)] hover:scale-[1.02] transition-transform duration-500 ease-out"
-                  loading="eager"
-                />
-              </div>
-
-              {/* Top Floating Badge: Capstone Lead */}
-              <div className="absolute top-2 left-0 z-20">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-black/80 backdrop-blur-md text-red-300 border border-red-500/40 shadow-lg">
-                  <CheckCircle2 className="w-3 h-3 text-red-400" />
-                  One-Palayan Capstone Lead
-                </span>
-              </div>
-
-              {/* Bottom Card Footer Badge */}
-              <div className="absolute bottom-1 inset-x-4 flex items-center justify-between text-xs z-20">
-                <div className="bg-black/85 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 shadow-xl">
-                  <span className="font-serif italic text-sm text-white font-medium">
-                    {personalInfo.name}
-                  </span>
-                </div>
-                <span className="rounded-full bg-red-600 text-white font-mono text-[11px] font-bold px-2.5 py-1 shadow-lg border border-red-400/40">
-                  {personalInfo.countryCode}
-                </span>
-              </div>
-
-              {/* Floating Bottom-Left Specialization Pill */}
-              <div className="absolute -bottom-4 -left-3 sm:-left-6 z-20 bg-[#16161d]/95 backdrop-blur-xl border border-red-500/40 px-3.5 py-2 rounded-xl shadow-2xl flex items-center gap-2">
-                <span className="text-base">🎨</span>
-                <div className="text-left">
-                  <p className="text-[10px] uppercase tracking-wider text-neutral-400">Creative &amp; Code</p>
-                  <p className="text-xs font-semibold text-white">Charcoal Artist &amp; Dev</p>
-                </div>
-              </div>
+            {/* Location */}
+            <div className="space-y-1">
+              <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#c5a059]">
+                LOCATION &bull; REGION
+              </p>
+              <p className="text-xs font-mono uppercase tracking-wider text-[#dfd7c7] font-medium leading-snug">
+                BONGABON, NUEVA ECIJA &bull; PH
+              </p>
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

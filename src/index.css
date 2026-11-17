@@ -1,66 +1,81 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Fraunces", serif;
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --color-primary: #ef4444;
-  --color-primary-dark: #dc2626;
-  --color-accent: #f87171;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-cinzel: "Cinzel", "Cormorant Garamond", serif;
+  --font-sans: "Inter", "Plus Jakarta Sans", sans-serif;
+  --color-gold: #c5a059;
+  --color-gold-bright: #e5c158;
+  --color-gold-champagne: #dfd5c6;
+  --color-gold-muted: #8f7845;
+  --color-emerald-deep: #06190f;
+  --color-emerald-dark: #082015;
+  --color-emerald-surface: #0d2f1f;
+  --color-emerald-card: #0f3523;
+  --color-emerald-border: #1d4d33;
 }
 
-/* Custom animations and utilities */
-@keyframes scrollMarquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+@layer utilities {
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+    letter-spacing: 0.08em;
+  }
+  .font-editorial-serif {
+    font-family: var(--font-serif);
+  }
+  .gold-shimmer {
+    background: linear-gradient(135deg, #f5d77f 0%, #d4af37 40%, #aa8028 70%, #e6c875 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gold-border {
+    border-color: rgba(197, 160, 89, 0.22);
+  }
+  .emerald-radial {
+    background: radial-gradient(circle at 65% 20%, rgba(22, 85, 52, 0.5) 0%, rgba(8, 32, 21, 0.98) 75%);
+  }
 }
 
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: scrollMarquee 30s linear infinite;
+/* Luxury smooth animations */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.animate-marquee:hover {
-  animation-play-state: paused;
+.animate-spin-slow {
+  animation: spinSlow 32s linear infinite;
 }
 
-/* Custom scrollbar */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+/* Custom sleek scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: #082015;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
-  border-radius: 4px;
+  background: #1d4d33;
+  border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ef4444;
-}
-
-/* Subtle background grid pattern matching professor requirement */
-.bg-grid-pattern {
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 56px 56px;
-}
-
-/* Smooth glass effect */
-.glass-panel {
-  background: rgba(18, 18, 23, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.glass-panel:hover {
-  border-color: rgba(239, 68, 68, 0.3);
-}
-
-/* Red glow */
-.glow-primary {
-  box-shadow: 0 0 35px -8px rgba(239, 68, 68, 0.35);
+  background: #c5a059;
 }

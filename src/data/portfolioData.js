@@ -3,324 +3,512 @@ export const portfolioData = {
     name: "Shiloh Abellera",
     firstName: "Shiloh",
     lastName: "Abellera",
-    role: "Full-Stack Developer, BSIT Senior & Creative Artist",
-    badge: "Available for work · 2026",
+    title: "Full Stack Developer and Graphic Designer",
+    role: "Full Stack Developer & Graphic Designer",
+    badge: "Available for Full-Time Roles & Career Opportunities · 2026",
     university: "Nueva Ecija University of Science and Technology (NEUST)",
-    degree: "Bachelor of Science in Information Technology",
-    year: "BSIT · 4th Year Senior",
-    location: "Nueva Ecija, Philippines",
+    degree: "Bachelor of Science in Information Technology (BSIT) – Web System Technology",
+    year: "BSIT · Graduating Senior (Class of 2026)",
+    location: "Brgy. Sinipit, Bongabon, Nueva Ecija, Philippines",
     countryCode: "PH",
+    phone: "09703008195",
+    phoneFormatted: "+63 970 300 8195",
     email: "shiloh.abellera111400@gmail.com",
-    github: "https://github.com",
-    githubUsername: "Shiloh-Abellera",
-    bio: "Full-stack developer, BSIT senior at NEUST, and creative artist. Creator of One-Palayan Kalinga Hub and ProcLink System. I merge engineering precision with artistic vision in web applications, automated institutional workflows, and multimedia design.",
-    quote: "Good software is not just about lines of code; it is about crafting intuitive solutions that make services accessible, communities stronger, and lives simpler.",
-    photo: "/images/shiloh-cutout.png",
+    github: "https://github.com/shilohabellera111400-bot",
+    githubUsername: "shilohabellera111400-bot",
+    description:
+      "A dedicated and adaptable individual with an interest in technology and innovation. I am always willing to learn, improve, and take on new experiences that contribute to my personal and professional growth.",
+    quote: "Building the future through technology, creativity, and determination.",
+    background:
+      "With a passion for technology and creativity, I enjoy transforming ideas into functional and visually appealing outputs. My experience in academic projects, web development, and digital editing has helped me develop both technical and creative skills.",
+    photos: {
+      original: "/images/shiloh-original-cutout.png",
+      suit: "/images/shiloh-suit-cutout.png",
+      bluePolo: "/images/shiloh_blue_polo.jpg",
+      bluePoloCutout: "/images/shiloh-blue-polo-cutout.png",
+      bandanaCutout: "/images/gaming/ashiro-cutout.png",
+      avatar: "/images/shiloh_avatar.png",
+      casualCollage: "/images/shiloh_casual_collage.jpg"
+    },
+    resumeUrl: "/Shiloh_Abellera_Resume.pdf",
     stats: [
-      { label: "Systems & Apps Built", value: "15+" },
-      { label: "Years Coding & Design", value: "3+" },
-      { label: "Capstone & ISO Rating", value: "99%" },
-      { label: "Honors & Credentials", value: "6+" }
+      { label: "Web Systems Built", value: "5+" },
+      { label: "Official Certifications", value: "6" },
+      { label: "Capstone ISO Rating", value: "99%" },
+      { label: "Years in Web & Design", value: "3+" }
     ]
   },
 
-  marqueeSkills: [
-    "PHP", "MySQL (3NF)", "JavaScript", "React.js", "Tailwind CSS", "ProcLink PRMS",
-    "One-Palayan Hub", "REST APIs", "Charcoal Portrait", "Adobe Audition", "Vocal Performance",
-    "Bootstrap 5", "Node.js", "Git & GitHub", "Vercel Deployment", "Row-Level Security"
+  careerProfile: {
+    goalsTitle: "Career Interests & Professional Goals",
+    goalsDescription:
+      "Aspiring to build high-impact digital solutions by bridging full-stack web engineering with human-centered graphic design. My objective is to contribute as a versatile developer and designer in forward-thinking organizations, specializing in scalable web systems, clean API architectures, relational databases (3NF), responsive user interfaces, and multimedia branding while pursuing continuous technical mastery.",
+    qualitiesTitle: "Personal Qualities & Core Strengths",
+    qualities: [
+      {
+        title: "Adaptability & Rapid Learning",
+        description: "Quickly mastering new frameworks, languages, and development environments under changing requirements."
+      },
+      {
+        title: "Creative Problem Solving",
+        description: "Approaching technical bottlenecks with both algorithmic logic and visual design intuition."
+      },
+      {
+        title: "Meticulous Attention to Detail",
+        description: "Crafting pixel-perfect layouts, clean semantic code, and secure database relationships."
+      },
+      {
+        title: "Teamwork & Collaboration",
+        description: "Working effectively with capstone partners, cross-functional teams, and stakeholders to deliver on time."
+      },
+      {
+        title: "Dedication & Responsibility",
+        description: "Hands-on commitment to quality, patient troubleshooting, and taking ownership of project milestones."
+      }
+    ]
+  },
+
+  education: [
+    {
+      level: "College / Tertiary",
+      institution: "Nueva Ecija University of Science and Technology (NEUST)",
+      campus: "Atate Campus, Palayan City, Nueva Ecija",
+      degree: "Bachelor of Science in Information Technology (BSIT)",
+      specialization: "Web System Technology",
+      period: "2023 – 2027",
+      status: "Graduating Senior · Class of 2026",
+      highlights: [
+        "Full-Stack Developer for Capstone Project: One Palayan – Kalinga Hub",
+        "Consistent academic excellence across Advanced Database Systems, Web Systems, and System Analysis",
+        "Specializing in Relational Data Modeling (3NF), Full-Stack PHP/React, and Mobile Systems"
+      ]
+    },
+    {
+      level: "Senior High School",
+      institution: "Bongabon Senior High School",
+      location: "Bongabon, Nueva Ecija",
+      period: "Graduated",
+      status: "Completed",
+      highlights: [
+        "Developed strong foundation in basic computer applications, mathematics, and science",
+        "Active participation in campus visual arts, creative events, and academic projects"
+      ]
+    },
+    {
+      level: "Junior High School",
+      institution: "Bongabon National High School",
+      location: "Bongabon, Nueva Ecija",
+      period: "Graduated",
+      status: "Completed",
+      highlights: [
+        "Built early interest in computer literacy, digital graphics, and leadership activities"
+      ]
+    },
+    {
+      level: "Elementary",
+      institution: "Jesus C. Ilagan Elementary School",
+      location: "Nueva Ecija",
+      period: "Graduated",
+      status: "Completed",
+      highlights: [
+        "Consistent foundational scholastic achievement and early recognition in drawing and art"
+      ]
+    }
   ],
 
+  workExperience: [
+    {
+      role: "Production Operator",
+      company: "Seven Dragon Food Galore Inc.",
+      location: "Taytay, Rizal",
+      period: "September 19, 2022 – February 19, 2023 (6 Months)",
+      type: "Full-Time Industrial Experience",
+      responsibilities: [
+        "Handled food production line operations, machine monitoring, and continuous quality assurance.",
+        "Assisted with product packaging, inventory staging, and scheduled production runs.",
+        "Followed workplace standard operating procedures (SOPs) and maintained strict safety standards."
+      ],
+      skillsLearned: ["Machine Monitoring", "SOP Compliance", "Production Efficiency", "Industrial Safety"]
+    },
+    {
+      role: "Event Decoration Assistant",
+      company: "Freelance / Occasional",
+      location: "Central Luzon / Nueva Ecija",
+      period: "3 Months (Occasional Engagement)",
+      type: "Creative & Production Freelance",
+      responsibilities: [
+        "Assisted in on-site event styling, venue decoration, and aesthetic theme implementation.",
+        "Helped with stage construction, material assembly, backdrop preparation, and lighting positioning.",
+        "Supported rapid event setup, breakdown, and client coordination under tight timeframes."
+      ],
+      skillsLearned: ["Spatial Design", "Material Assembly", "Stage Craft", "Team Coordination"]
+    }
+  ],
+
+  // In seminars, CERTIFICATES are the primary photos!
+  certifications: [
+    {
+      id: "cert-msoffice",
+      title: "Microsoft Office Pro: Master of Essentials",
+      organizer: "Ethel Programming Computer Programming Services (EPCPS)",
+      speaker: "Mr. Ryan Ricafort (CEO/Owner: Ms. Ethel Grace Verana)",
+      date: "July 28, 2026",
+      platform: "Google Meet (Online Webinar)",
+      category: "Productivity & Office Systems",
+      certificateImage: "/images/certificates/msoffice_2.jpeg", // Official Certificate
+      documentationImage: "/images/certificates/msoffice_1.jpeg", // Session Documentation
+      shortDescription:
+        "Comprehensive training in advanced document processing, spreadsheet data modeling, formula computation, and visual presentation design across Microsoft Word, Excel, and PowerPoint.",
+      topics: [
+        "Advanced Microsoft Word formatting, document structuring, and professional typography",
+        "Microsoft Excel formula modeling, conditional formatting, and data tables",
+        "High-impact slide presentation design and visual animation in Microsoft PowerPoint"
+      ]
+    },
+    {
+      id: "cert-ccna",
+      title: "How to Grow Your I.T. Career by Becoming CCNA",
+      organizer: "Tech Academy (Billy Ramirez IT Solutions)",
+      speaker: "Mr. Billy R. Ramirez (Senior Network Administrator & Instructor)",
+      date: "August 1, 2026",
+      platform: "Zoom Workplace (Live Online Webinar)",
+      category: "Networking & Infrastructure",
+      certificateImage: "/images/certificates/ccna_2.jpg", // Official Certificate
+      documentationImage: "/images/certificates/ccna_1.jpg", // Session Documentation
+      shortDescription:
+        "Technical session focused on foundational networking concepts, OSI reference layers, IP routing and switching principles, and industry pathways toward Cisco CCNA certification.",
+      topics: [
+        "Core networking architecture, IP addressing, and OSI/TCP-IP reference models",
+        "Routing and switching essentials, VLAN configuration, and network security foundations",
+        "Career roadmap for CCNA credentials and enterprise networking roles"
+      ]
+    },
+    {
+      id: "cert-gamedev",
+      title: "PRESS START: Game Development in Region 8",
+      subtitle: "A Webinar Series on Digital Jobs: 'Being a Hobbyist Game Dev in the Modern Era'",
+      organizer: "DICT Regional Office VIII, IIDB & Trabahong Digital",
+      speaker: "Mr. Michael Sean Brian B. Omisol (Software Developer & Game Creator, UP Diliman CS)",
+      date: "August 17, 2026",
+      platform: "Google Meet & Facebook Live (DICT RO VIII)",
+      category: "Game Dev & Creative Technologies",
+      certificateImage: "/images/certificates/gamedev_2.jpg", // Official Certificate
+      documentationImage: "/images/certificates/gamedev_1.jpg", // Session Documentation
+      shortDescription:
+        "Explored the complete game development lifecycle, covering 2D mechanics, sprite crafting, physics engines, and career opportunities for hobbyist developers in the creative digital economy.",
+      topics: [
+        "Game development lifecycle from concept and sprite design to code mechanics",
+        "Indie game engine workflows, 2D physics, and game balance",
+        "Digital career opportunities in Philippine and international creative tech industries"
+      ]
+    },
+    {
+      id: "cert-google",
+      title: "Empowering Pampanga Digital Transformation: Google Workspace & AI Tools",
+      organizer: "DICT Region III, ILCDB, DICT Pampanga & Tech4ED DTC Central Luzon",
+      speaker: "Ms. Ofelia T. Borral (Center Manager) | Regional Director: Antonio Edward E. Padre",
+      date: "August 11, 2026",
+      platform: "Online Streaming via Tech4ED DTC Region 3",
+      certificateId: "2026-08-PHM-V48B-OL-047",
+      category: "Cloud Collaboration & AI",
+      certificateImage: "/images/certificates/google_workspace_2.jpeg", // Official Certificate
+      documentationImage: "/images/certificates/google_workspace_1.jpeg", // Session Documentation
+      shortDescription:
+        "Three-hour intensive ICT skills training on modern cloud office workflows, real-time team collaboration in Google Workspace, and practical AI tools for productivity.",
+      topics: [
+        "Cloud-based collaboration utilizing Google Docs, Sheets, Slides, and Drive workflows",
+        "Integrating modern AI tools for automated workplace reporting and data visualization",
+        "Digital security, permissions management, and institutional transformation standards"
+      ]
+    },
+    {
+      id: "cert-it-cert",
+      title: "How to Grow Your Career with IT Certifications",
+      organizer: "Tech Academy (techacademy.ph / Billy Ramirez IT Solutions)",
+      speaker: "Mr. Billy R. Ramirez (Senior Network Administrator & Instructor)",
+      date: "October 3, 2026",
+      platform: "Zoom Workplace (Live Online Video Conference)",
+      certificateId: "TAPH-CE000258",
+      category: "Career Strategy & Credentials",
+      certificateImage: "/images/certificates/it_cert_2.jpeg", // Official Certificate
+      documentationImage: "/images/certificates/it_cert_1.jpeg", // Session Documentation
+      shortDescription:
+        "Industry-aligned webinar detailing how technical certifications validate practical competencies, establish professional credibility, and accelerate IT employment.",
+      topics: [
+        "Strategic credential mapping: CompTIA, Cisco CCNA, AWS Cloud, and Full-Stack tracks",
+        "Validating hands-on technical competencies for high-demand international roles",
+        "Resume and portfolio positioning for certified tech candidates"
+      ]
+    },
+    {
+      id: "cert-ai",
+      title: "AI-Driven Career Intelligence & Employability Analytics (Series 10)",
+      organizer: "Institut Brittany d'Enseignement Superieur (France) & London Examinations Board (UK)",
+      speaker: "Dr. K. Nagarajan | Master of Ceremony: Dr. Deepika Kohli",
+      date: "July 29, 2026",
+      platform: "Microsoft Teams (Virtual Global Workshop)",
+      category: "Artificial Intelligence & Analytics",
+      certificateImage: "/images/certificates/ai_career_2.jpg", // Official Certificate
+      documentationImage: "/images/certificates/ai_career_1.jpg", // Session Documentation
+      shortDescription:
+        "International virtual workshop examining predictive career intelligence, automated employability analytics, and technological transformation across global workforce sectors.",
+      topics: [
+        "Leveraging AI analytics to assess market employability and skills demand",
+        "Modern algorithmic workflows and human-AI synergy in software engineering",
+        "Global career standards and ethical digital technology integration"
+      ]
+    }
+  ],
+
+  // Projects updated with user's authentic screenshots, "Cafeteria" rename, and Sierra Madre Explorer replacing Voting System
   projects: [
     {
       id: "01",
-      title: "One-Palayan Kalinga Hub: Integrated Social Service Management System",
-      type: "Official Capstone Project · E-Governance & Social Welfare",
-      summary: "An integrated web-based social service appointment, housing beneficiary management, and Assistance to Individuals in Crisis Situations (AICS) tracking system developed for the City Social Welfare and Development Office (CSWDO) of Palayan City. Built under the V-Model SDLC and evaluated under ISO/IEC 25002:2024 Software Product Quality Standards, replacing manual paper processes with real-time digital access.",
-      technologies: ["PHP", "MySQL (3NF)", "JavaScript", "HTML5/CSS3", "Bootstrap 5", "Row-Level Security (RLS)", "V-Model SDLC"],
-      views: [
-        {
-          id: "beneficiary",
-          label: "Beneficiary Portal",
-          icon: "👤",
-          badge: "Citizen View",
-          description: "Online booking for CSWDO appointments, document pre-verification upload, and real-time status tracking for AICS medical, burial, and financial assistance.",
-          highlights: ["Online appointment reservation", "Real-time AICS claim tracking", "Digital document upload & pre-check"]
-        },
-        {
-          id: "cswdo-staff",
-          label: "CSWDO Staff Console",
-          icon: "🏛️",
-          badge: "Staff & Social Worker View",
-          description: "Dedicated console for case workers to review applicant documents, manage daily intake queues, approve crisis aid, and monitor housing unit allocations.",
-          highlights: ["Document pre-verification queue", "Housing beneficiary roster & unit allocation", "Direct remarks & SMS dispatch"]
-        },
-        {
-          id: "admin-analytics",
-          label: "LGU Admin Dashboard",
-          icon: "⚡",
-          badge: "Executive City Admin",
-          description: "Centralized administrative and reporting engine delivering city-wide social welfare metrics and audit transparency for Palayan City government.",
-          highlights: ["ISO/IEC 25002:2024 compliant audit logs", "AICS disbursement statistical reports", "Role-based user permissions"]
-        }
+      title: "One Palayan – Kalinga Hub",
+      subtitle: "Integrated Social Service Management System",
+      type: "Official Capstone Project · E-Governance",
+      role: "Lead Architect & Full-Stack Developer",
+      client: "CSWDO Palayan City & NEUST CICT",
+      status: "Completed & ISO/IEC 25002:2024 Evaluated",
+      summary:
+        "An integrated web-based social service appointment, housing beneficiary management, and Assistance to Individuals in Crisis Situations (AICS) tracking system developed for the City Social Welfare and Development Office (CSWDO) of Palayan City. Built under the V-Model SDLC and evaluated under ISO/IEC 25002:2024 Software Product Quality Standards.",
+      technologies: ["PHP", "MySQL (3NF)", "JavaScript", "Bootstrap 5", "HTML5/CSS3", "Row-Level Security (RLS)", "V-Model SDLC"],
+      images: [
+        "/images/projects/kalinga/kalinga_home_landing.jpg",
+        "/images/projects/kalinga/kalinga_citizen_dashboard.jpg",
+        "/images/projects/kalinga/kalinga_aics_assistance.jpg",
+        "/images/projects/kalinga/kalinga_housing_programs.jpg",
+        "/images/projects/kalinga/kalinga_appointment_desk.jpg",
+        "/images/projects/kalinga/kalinga_cswdo_announcements.jpg",
+        "/images/projects/kalinga/kalinga_resident_login.jpg",
+        "/images/projects/kalinga/kalinga_resident_register.jpg"
       ],
-      githubLink: "https://github.com",
+      highlights: [
+        "Architected normalized 3NF relational database schema with Row-Level Security (RLS) for resident privacy",
+        "Digitized crisis financial assistance (AICS) intake, reducing processing from days to real-time verification",
+        "Engineered triple-role portals: Citizen Beneficiary Portal, CSWDO Social Worker Console, and Executive Admin Analytics",
+        "Evaluated with exemplary ratings by IT experts and municipal case workers under ISO/IEC standards"
+      ],
+      githubLink: "https://github.com/shilohabellera111400-bot/One-palayan-kalinga-hub",
       liveLink: "#"
     },
     {
       id: "02",
-      title: "ProcLink System — Multi-Tier Procurement & Records Management",
-      type: "Enterprise Web Application · Institutional Workflow Automation",
-      summary: "A robust procurement and supply requisition management system (PRMS) designed to eliminate bureaucratic bottlenecks in institutional supply management. Features an automated sequential approval workflow (Procurement ➔ Budget Office ➔ University President / Executive ➔ Final Supply Release) with comprehensive audit logging.",
+      title: "ProcLink PRMS",
+      subtitle: "Procurement Request Monitoring & Management System",
+      type: "Enterprise Web Application · Workflow Automation",
+      role: "System Architect & Backend Developer",
+      client: "Institutional Procurement Office Showcase",
+      status: "Production Architecture Tested",
+      summary:
+        "A multi-tier procurement and supply requisition monitoring system (PRMS) designed to eliminate bureaucratic bottlenecks in institutional supply management. Features a 6-stage automated sequential approval pipeline (Supply Availability ➔ Procurement Review ➔ Budget Approval ➔ President's Sign-off ➔ Procurement Decision ➔ Request Completed) with role-based access for End Users, Requesters, Procurement Officers, Executives, and Suppliers.",
       technologies: ["PHP", "MariaDB / MySQL", "JavaScript", "REST APIs", "Session Authentication", "InfinityFree Cloud"],
-      views: [
-        {
-          id: "requisition",
-          label: "Requisition Portal",
-          icon: "📦",
-          badge: "Department Requester",
-          description: "Supply catalog browser, custom request cart, budget allocation checks, and urgency priority flags.",
-          highlights: ["Intuitive supply cart ordering", "Real-time request stage indicator", "Department budget limits"]
-        },
-        {
-          id: "workflow",
-          label: "Multi-Tier Approval Pipeline",
-          icon: "✍️",
-          badge: "Approval Hierarchy",
-          description: "Strict 4-stage verification: Procurement validation, Budget Officer sign-off, President approval, and Storekeeper release.",
-          highlights: ["Automated approval state transitions", "Executive signature & remarks logs", "Instant clarification requests"]
-        },
-        {
-          id: "inventory",
-          label: "Records & Inventory Audit",
-          icon: "📊",
-          badge: "Procurement Officer",
-          description: "Real-time inventory deduction, purchase order generation, vendor ledger, and historical exportable audit logs.",
-          highlights: ["Stock level auto-deductions", "Voucher PDF generation", "Comprehensive transaction trail"]
-        }
+      images: [
+        "/images/projects/proclink/proclink_landing_portal.jpg",
+        "/images/projects/proclink/proclink_role_login.jpg",
+        "/images/projects/proclink/proclink_requester_dashboard.jpg",
+        "/images/projects/proclink/proclink_purchase_request.jpg",
+        "/images/projects/proclink/proclink_track_request.jpg",
+        "/images/projects/proclink/proclink_admin_dashboard.jpg",
+        "/images/projects/proclink/proclink_user_management.jpg",
+        "/images/projects/proclink/proclink_supplier_management.jpg"
       ],
-      githubLink: "https://github.com",
+      highlights: [
+        "Implemented strict 6-stage sequential approval chain (Supply, Review, Budget, President, Decision, Completion) with total visibility",
+        "Role-based authentication architecture serving 7 distinct roles: End Users, Requesters, Procurement, VP, President, Suppliers, and Admins",
+        "Standardized Purchase Request (PR) generator supporting CSE (Common Use) and Non-Common Use with automated document header calculation",
+        "Real-time request tracking engine with unique ID tracking (e.g., PR-20260804-731) and multi-vendor supplier directory management"
+      ],
+      githubLink: "https://github.com/shilohabellera111400-bot/proclink-prms",
       liveLink: "#"
     },
     {
       id: "03",
-      title: "Barangay Cares — Incident & Document Request System",
-      type: "Full-Stack Web Application · Public Administration",
-      summary: "A localized municipal e-services platform facilitating citizen complaint triage and official barangay document requests (Clearance, Residency, Indigency) with automated verification and administrative reply handling.",
+      title: "Barangay Cares",
+      subtitle: "Community Concern & Resident Information System",
+      type: "Municipal Web Application · Public Administration",
+      role: "Full-Stack Developer",
+      client: "Barangay Sumacab Este Community Administration",
+      status: "Completed & Deployed",
+      summary:
+        "A localized municipal e-services platform facilitating 24/7 citizen complaint reporting, real-time ticket tracking, and official barangay document requests (Clearance, Residency, Indigency) with automated verification and administrative reply handling.",
       technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap 5", "HTML5/CSS3", "RESTful API"],
-      views: [
-        {
-          id: "resident",
-          label: "Resident Portal",
-          icon: "🏘️",
-          badge: "Citizen View",
-          description: "Online filing of incidents, document request cart, live ticket tracker, and official announcements feed.",
-          highlights: ["Real-time incident tracking", "Document request cart", "Community notification alerts"]
-        },
-        {
-          id: "admin",
-          label: "Admin Console",
-          icon: "🛡️",
-          badge: "Barangay Official View",
-          description: "Case triage dashboard, dispute logs, resident registry, and official document issuance generator.",
-          highlights: ["Dispute categorization", "PDF document stamping", "Citizen verification audit"]
-        }
+      images: [
+        "/images/projects/barangay/barangay_landing_home.jpg",
+        "/images/projects/barangay/barangay_resident_dashboard.jpg",
+        "/images/projects/barangay/barangay_resident_login.jpg",
+        "/images/projects/barangay/bc_logo.png"
       ],
-      githubLink: "https://github.com",
+      highlights: [
+        "24/7 online community concern reporting with category classification and dispute tracking",
+        "Automated PDF document issuance for Barangay Clearances and Indigency certificates",
+        "Real-time resident dashboard with status tracking and official barangay responses",
+        "Administrative analytics console for incident resolution metrics"
+      ],
+      githubLink: "https://github.com/shilohabellera111400-bot/barangay-complaint-system",
       liveLink: "#"
     },
     {
       id: "04",
-      title: "WeCare — Healthcare Clinic & Appointment Management System",
-      type: "Web Application · HealthTech",
-      summary: "An outpatient appointment scheduling and electronic medical records (EMR) system featuring doctor calendar synchronization, patient history archives, and digital prescription tracking.",
-      technologies: ["React.js", "Node.js", "MySQL", "Tailwind CSS", "REST API", "JWT Auth"],
-      views: [
-        {
-          id: "patient",
-          label: "Patient Portal",
-          icon: "🩺",
-          badge: "Patient View",
-          description: "Doctor directory search, calendar booking, medical consultation history, and digital prescription access.",
-          highlights: ["Direct slot booking", "Medical history records", "Consultation reminders"]
-        },
-        {
-          id: "doctor",
-          label: "Physician Console",
-          icon: "👨‍⚕️",
-          badge: "Doctor View",
-          description: "Daily patient queue manager, consultation diagnostics recorder, and electronic prescription generator.",
-          highlights: ["Live patient queue", "E-Prescription generator", "Diagnostic history"]
-        }
+      title: "Cafeteria Ordering System",
+      subtitle: "Ionic Cross-Platform Food Ordering & Menu Mobile App",
+      type: "Mobile Application · Hybrid Ionic Framework",
+      role: "Mobile Frontend Developer",
+      client: "Mobile App Development Coursework & Showcase",
+      status: "Completed & Tested on Emulators",
+      summary:
+        "A cross-platform mobile canteen pre-ordering application built with Ionic Framework and Angular. Engineered to eliminate waiting in long cafeteria lines, featuring student dashboards ('Welcome Back, ashiro!'), promotional meal carousels, category filtering (Rice Meals, Snacks, Drinks), real-time cart calculation, side portal navigation, and student profile activity tracking.",
+      technologies: ["Ionic 7", "Angular", "TypeScript", "SCSS", "Capacitor", "Node.js"],
+      images: [
+        "/images/projects/cafeteria/cafeteria_student_dashboard.jpg",
+        "/images/projects/cafeteria/cafeteria_promo_landing.jpg",
+        "/images/projects/cafeteria/cafeteria_menu_catalog.jpg",
+        "/images/projects/cafeteria/cafeteria_cart_checkout.jpg",
+        "/images/projects/cafeteria/cafeteria_side_portal.jpg",
+        "/images/projects/cafeteria/cafeteria_student_profile.jpg"
       ],
-      githubLink: "https://github.com",
+      highlights: [
+        "Student dashboard featuring personalized greeting ('ashiro'), order count metrics (12 Orders), and 4.9 rating",
+        "Pre-order promotion showcase highlighting student favorites, 50% flash discounts, and signature meal sets",
+        "Categorized food catalog with live search across Rice Meals, Snacks, and Beverages with instant cart additions",
+        "Interactive order cart with dynamic quantity incrementors, item removal, and real-time total bill calculation",
+        "Slide-out School Canteen Portal drawer with role badge (Student/Customer) and student profile management"
+      ],
+      githubLink: "https://github.com/shilohabellera111400-bot/One-palayan-kalinga-hub",
+      liveLink: "#"
+    },
+    {
+      id: "05",
+      title: "Sierra Madre Explorer",
+      subtitle: "Eco-Tourism & Regional Travel Guide Portal",
+      type: "Tourism & Travel Web Portal · Regional Showcase",
+      role: "Full-Stack Web Developer",
+      client: "Regional Tourism & Eco-Exploration Showcase",
+      status: "Completed & Database Tested",
+      summary:
+        "A dynamic eco-tourism and regional travel guide web platform celebrating the natural wonders of the Sierra Madre mountain range. Features categorized exploration across mountain resorts, eco-hotels, and hidden tourist spots (e.g. Bongabon, Nueva Ecija), full destination search, interactive OpenStreetMap geolocation pins, rate cards, and an administrative CRUD console for hospitality management.",
+      technologies: ["PHP", "MySQL", "JavaScript", "Leaflet / OpenStreetMap", "HTML5/CSS3", "Bootstrap"],
+      images: [
+        "/images/projects/sierra/sierra_hero_landing.jpg",
+        "/images/projects/sierra/sierra_categories_explorer.jpg",
+        "/images/projects/sierra/sierra_search_results.jpg",
+        "/images/projects/sierra/sierra_resort_listings.jpg",
+        "/images/projects/sierra/sierra_resort_detail.jpg",
+        "/images/projects/sierra/sierra_admin_dashboard.jpg"
+      ],
+      highlights: [
+        "Immersive sunrise hero landing page celebrating the longest mountain range in the Philippines",
+        "Categorized exploration hubs for Mountain Resorts, Forest Eco-Hotels, and Natural Tourist Attractions",
+        "Keyword search engine filtering destinations across provincial municipalities (e.g. Bongabon)",
+        "Comprehensive destination view with photo galleries, rate breakdowns, amenities, and Leaflet map pin",
+        "Administrative CRUD dashboard tracking live counts of Hotels, Resorts, Tourist Spots, and Registered Users"
+      ],
+      githubLink: "https://github.com/shilohabellera111400-bot/One-palayan-kalinga-hub",
+      liveLink: "#"
+    },
+    {
+      id: "06",
+      title: "Rocket Launch: Cartesian Simulation",
+      subtitle: "Algebraic Coordinate Game & Physics Engine",
+      type: "Educational Game Project · Python & Math",
+      role: "Game Programmer & Math Engine Developer",
+      client: "Interactive Computing Showcase",
+      status: "Completed & Tested",
+      summary:
+        "An educational space navigation and algebraic coordinate simulation engineered in Python with Pygame. Players guide a spacecraft by identifying Cartesian grid coordinates to collect procedural fuel canisters before gravitational descent triggers a launchpad collision. Features multi-level scaling quotas, realistic thruster physics, and collision explosion state machines.",
+      technologies: ["Python 3", "Pygame Engine", "Linear Algebra", "Cartesian Coordinate Mapping", "State Machines"],
+      images: [
+        "/images/rocket/rocket_02_flight_navigation.jpg",
+        "/images/rocket/rocket_01_launch_pad.jpg",
+        "/images/rocket/rocket_03_mission_success.jpg",
+        "/images/rocket/rocket_04_crash_explosion.jpg"
+      ],
+      highlights: [
+        "Bidirectional coordinate conversion algorithm mapping mathematical (x, y) coordinates to pixel positions",
+        "Dual-phase gravity and propulsion physics engine (downward acceleration +0.3, upward thruster -1.0)",
+        "Procedural fuel canister distribution with progressive level difficulty (quota: level + 4 tanks)",
+        "Pygame state machine managing active flight, fuel collection victory, and crash explosion VFX animations"
+      ],
+      githubLink: "https://github.com/shilohabellera111400-bot/One-palayan-kalinga-hub",
       liveLink: "#"
     }
   ],
 
-  achievements: [
-    {
-      id: "ach-capstone",
-      category: "Capstone",
-      icon: "🏆",
-      title: "Lead Architect & Developer: One-Palayan Kalinga Hub",
-      institution: "CSWDO Palayan City & NEUST CICT",
-      year: "2025 - 2026",
-      summary: "Designed and engineered the official web-based social service appointment, housing beneficiary management, and AICS tracking system for CSWDO Palayan City, tested according to ISO/IEC 25002:2024 software product quality standards.",
-      details: [
-        "Architected complete 3NF normalized MySQL database with Row-Level Security (RLS) for citizen data privacy",
-        "Digitized AICS crisis intake, eliminating physical queues and reducing turnaround from days to hours",
-        "Evaluated with stellar ratings by IT experts and CSWDO social workers under ISO/IEC 25002 standards"
-      ]
-    },
-    {
-      id: "ach-proclink",
-      category: "Technical",
-      icon: "⚡",
-      title: "ProcLink PRMS Workflow Architecture Recognition",
-      institution: "Enterprise Systems Showcase / Institutional Software",
-      year: "2026",
-      summary: "Developed the ProcLink Procurement & Records Management System, automating a 4-tier approval pipeline (Procurement ➔ Budget ➔ President ➔ Release) with real-time audit trails.",
-      details: [
-        "Built dynamic approval state machine resolving inter-departmental requisition delays",
-        "Implemented session authorization and automated inventory level tracking",
-        "Deployed and tested on live web cloud infrastructure"
-      ]
-    },
-    {
-      id: "ach-arts",
-      category: "Creative",
-      icon: "🎨",
-      title: "Fine Art & Charcoal Portrait Master Artist",
-      institution: "Creative Portfolio & Visual Arts",
-      year: "2022 - Present",
-      summary: "Accomplished realism charcoal portrait artist, blending anatomical accuracy, lighting precision, and artistic discipline into user experience and UI interface craft.",
-      details: [
-        "Skilled in hyper-realistic charcoal shading, fine detail rendering, and facial proportions",
-        "Vocal performance and singing enthusiast, exploring creative acoustic interpretation",
-        "Audio engineering with Adobe Audition: vocal mastering, noise suppression, and podcast editing"
-      ]
-    },
-    {
-      id: "ach-dean",
-      category: "Academic",
-      icon: "🎖️",
-      title: "Dean's Lister & Academic Honors",
-      institution: "College of Information and Communications Technology (NEUST)",
-      year: "2023 - 2026",
-      summary: "Maintained consistent Dean's List academic honors across core computer science and software development subjects including Advanced Database Systems, Web Systems, and System Analysis.",
-      details: [
-        "Consistent top-tier scholastic standing in CICT department",
-        "Recognized for excellence in relational data modeling and software lifecycle methodologies",
-        "Active peer mentor in web development and algorithmic problem solving"
-      ]
-    },
-    {
-      id: "ach-cert",
-      category: "Certification",
-      icon: "📜",
-      title: "Full-Stack Web Development & System Architecture Credential",
-      institution: "Professional Web Technology & Software Certification",
-      year: "2025",
-      summary: "Comprehensive certification validating full-stack engineering proficiency: PHP backend services, MySQL database modeling, responsive modern frontend, and REST APIs.",
-      details: [
-        "Proficiency in RESTful API lifecycle, secure session management, and CSRF/XSS defense",
-        "Mastery of modern CSS frameworks, responsive layouts, and cross-browser reliability",
-        "Cloud deployment experience with Vercel and production databases"
-      ]
-    },
-    {
-      id: "ach-summit",
-      category: "Leadership",
-      icon: "🚀",
-      title: "National IT Youth Summit Student Delegate",
-      institution: "Philippine Society of Information Technology Educators (PSITE)",
-      year: "2025",
-      summary: "Represented NEUST as an official student delegate at nationwide technology conventions, exploring modern cloud deployments, cybersecurity, and digital public administration.",
-      details: [
-        "Participated in workshops on modern web architecture and cloud CI/CD pipelines",
-        "Collaborated with developers across Central Luzon on public sector digital transformation",
-        "Engaged in technical symposiums on AI and data privacy compliance"
-      ]
-    }
-  ],
+  skillsData: {
+    technical: [
+      { name: "PHP & MVC Architecture", level: 92, category: "Backend" },
+      { name: "MySQL (3NF Normalization)", level: 94, category: "Database" },
+      { name: "JavaScript (ES6+)", level: 90, category: "Frontend" },
+      { name: "React.js Applications", level: 88, category: "Frontend" },
+      { name: "Tailwind CSS & Modern Layouts", level: 92, category: "Frontend" },
+      { name: "HTML5 & Semantic Markup", level: 95, category: "Frontend" },
+      { name: "CSS3 & Responsive Design", level: 90, category: "Frontend" },
+      { name: "RESTful API Integration", level: 86, category: "Backend" },
+      { name: "Bootstrap 5 Framework", level: 92, category: "Frontend" },
+      { name: "Git Version Control & GitHub", level: 88, category: "Tools" },
+      { name: "Vercel Cloud Deployment", level: 85, category: "Tools" },
+      { name: "Ionic & Angular Mobile", level: 82, category: "Mobile" },
+      { name: "Python 3 & Pygame Engine", level: 86, category: "Core" }
+    ],
+    creative: [
+      { name: "Traditional & Digital Arts", level: 95, category: "Creative" },
+      { name: "Charcoal Portrait Realism", level: 96, category: "Creative" },
+      { name: "Graphic Design & Visual Layout", level: 90, category: "Creative" },
+      { name: "Adobe Audition Audio Editing", level: 88, category: "Creative" },
+      { name: "Photo & Video Editing", level: 88, category: "Creative" },
+      { name: "UI/UX Wireframing & Prototyping", level: 86, category: "Creative" },
+      { name: "Vocal Performance & Singing", level: 85, category: "Creative" }
+    ],
+    soft: [
+      "Adaptability & Quick Learning",
+      "Creative Problem Solving",
+      "Meticulous Attention to Detail",
+      "Teamwork & Cross-functional Collaboration",
+      "Time Management & Responsibility",
+      "Patience & Dedicated Troubleshooting",
+      "Technical Support & Documentation"
+    ]
+  },
 
-  skills: [
-    { number: "01", name: "Full-Stack Web Development", category: "Full-Stack" },
-    { number: "02", name: "PHP & MVC Backend Logic", category: "Backend" },
-    { number: "03", name: "MySQL (3NF) & Relational DBs", category: "Database" },
-    { number: "04", name: "One-Palayan & ProcLink PRMS", category: "Full-Stack" },
-    { number: "05", name: "Charcoal Portrait Art (Realism)", category: "Creative" },
-    { number: "06", name: "Audio Editing (Adobe Audition)", category: "Creative" },
-    { number: "07", name: "Vocal Performance & Singing", category: "Creative" },
-    { number: "08", name: "JavaScript (ES6+) & DOM", category: "Frontend" },
-    { number: "09", name: "React.js & Single Page Apps", category: "Frontend" },
-    { number: "10", name: "Tailwind CSS & Responsive UI", category: "Frontend" },
-    { number: "11", name: "RESTful APIs & Endpoints", category: "Backend" },
-    { number: "12", name: "Bootstrap 5 Framework", category: "Frontend" },
-    { number: "13", name: "HTML5 & Semantic Markup", category: "Frontend" },
-    { number: "14", name: "CSS3 Flexbox, Grid & Animations", category: "Frontend" },
-    { number: "15", name: "Row-Level Security (RLS) & RBAC", category: "Security" },
-    { number: "16", name: "Database Normalization (3NF)", category: "Database" },
-    { number: "17", name: "Python Programming & B-Trees", category: "Core" },
-    { number: "18", name: "Java Object-Oriented Programming", category: "Core" },
-    { number: "19", name: "Git Version Control & GitHub", category: "Tools" },
-    { number: "20", name: "Vercel Cloud Deployment", category: "Tools" },
-    { number: "21", name: "XSS & SQL Injection Defense", category: "Security" },
-    { number: "22", name: "V-Model SDLC & ISO/IEC 25002", category: "Professional" },
-    { number: "23", name: "System Testing & QA Debugging", category: "DevOps" },
-    { number: "24", name: "Visual Arts, Shading & UI Aesthetics", category: "Creative" }
-  ],
-
-  workProcess: [
-    {
-      number: "01",
-      phase: "Discover",
-      icon: "Search",
-      summary: "Stakeholder interviews, user pain-point analysis, and operational requirement gathering.",
-      details: "Like in One-Palayan Hub, I start by collaborating with agency heads and end-users to understand the true administrative bottleneck before writing a single line of code."
-    },
-    {
-      number: "02",
-      phase: "Ideate",
-      icon: "Lightbulb",
-      summary: "Architecting entity-relationship models (3NF), data flow diagrams, and user journey wireframes.",
-      details: "Designing third-normal form database schemas, role permission matrices (Residents, Staff, Admin), and sequential workflow pipelines (as seen in ProcLink PRMS)."
-    },
-    {
-      number: "03",
-      phase: "Design",
-      icon: "Palette",
-      summary: "Crafting intuitive, accessible, and responsive user interfaces with artistic precision.",
-      details: "Leveraging my background in charcoal realism and visual arts to create ergonomic layouts, balanced typography, and responsive modern dark aesthetics."
-    },
-    {
-      number: "04",
-      phase: "Develop",
-      icon: "Code2",
-      summary: "Writing clean, maintainable, and secure PHP/React code with verified backend logic.",
-      details: "Implementing RESTful APIs, row-level access control, input sanitization against XSS/SQLi, and session token authentication."
-    },
-    {
-      number: "05",
-      phase: "Deliver",
-      icon: "Send",
-      summary: "Rigorous testing under ISO/IEC 25002:2024 standards, Vercel deployment, and user training.",
-      details: "Executing unit, integration, and user acceptance testing (UAT) with real stakeholders, followed by automated GitHub and Vercel cloud deployment."
-    }
-  ],
-
-  education: [
-    {
-      degree: "Bachelor of Science in Information Technology (BSIT)",
-      institution: "Nueva Ecija University of Science and Technology (NEUST)",
-      campus: "Atate / General Tinio Campus, Nueva Ecija",
-      period: "2022 - 2026 (Graduating Senior)",
-      status: "In Progress · 4th Year Senior",
-      highlights: [
-        "Lead developer and researcher for Capstone Project 'One-Palayan Kalinga Hub' for CSWDO Palayan City",
-        "Consistent academic honors and Dean's Lister standing throughout academic career",
-        "Specializing in Web Systems Architecture, Enterprise Workflow Automation, and Relational Database Engineering"
-      ]
-    }
-  ]
+  gamingAlterEgo: {
+    alias: "ASHIRO",
+    tagline: "Where tactical reflex meets strategic patience.",
+    games: [
+      {
+        id: "cod",
+        title: "Call of Duty",
+        genre: "Tactical FPS",
+        role: "Tactical Combat & Breach",
+        description: "I enjoy action-packed gameplay, tactical combat, and competitive matches."
+      },
+      {
+        id: "pubg",
+        title: "PUBG Mobile",
+        genre: "Battle Royale",
+        role: "Survival Strategist",
+        description: "I enjoy battle royale gameplay, survival strategies, and teamwork."
+      },
+      {
+        id: "mlbb",
+        title: "Mobile Legends: Bang Bang",
+        genre: "5v5 MOBA",
+        role: "Strategic Teamwork",
+        description: "I enjoy competitive MOBA matches, teamwork, and strategic gameplay."
+      },
+      {
+        id: "hok",
+        title: "Honor of Kings",
+        genre: "Hero Arena",
+        role: "Team Coordination",
+        description: "I enjoy hero-based combat, team coordination, and competitive matches."
+      },
+      {
+        id: "valorant",
+        title: "VALORANT",
+        genre: "Tactical Shooter",
+        role: "Precision & Duelist",
+        description: "I enjoy tactical shooting, precision, strategy, and team-based competition."
+      }
+    ]
+  }
 };

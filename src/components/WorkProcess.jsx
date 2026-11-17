@@ -1,80 +1,81 @@
 import React from 'react';
-import { portfolioData } from '../data/portfolioData';
-import { Search, Lightbulb, Palette, Code2, Rocket } from 'lucide-react';
 
 export default function WorkProcess() {
-  const { workProcess } = portfolioData;
-
-  const getStepIcon = (index) => {
-    switch (index) {
-      case 0: return <Search className="w-5 h-5 text-red-400" />;
-      case 1: return <Lightbulb className="w-5 h-5 text-amber-400" />;
-      case 2: return <Palette className="w-5 h-5 text-rose-400" />;
-      case 3: return <Code2 className="w-5 h-5 text-red-400" />;
-      case 4: return <Rocket className="w-5 h-5 text-emerald-400" />;
-      default: return <Code2 className="w-5 h-5 text-red-400" />;
+  const steps = [
+    {
+      number: "01",
+      title: "DISCOVER",
+      description: "I learn about stakeholder needs, agency pain points, and administrative workflows."
+    },
+    {
+      number: "02",
+      title: "DEFINE",
+      description: "I architect 3NF relational schemas, data flows, and role permission matrices."
+    },
+    {
+      number: "03",
+      title: "DESIGN",
+      description: "I craft wireframes, responsive layouts, and intuitive UI that bring ideas to life."
+    },
+    {
+      number: "04",
+      title: "DEVELOP",
+      description: "I write secure PHP/React code, REST endpoints, and implement ISO/IEC standards."
+    },
+    {
+      number: "05",
+      title: "DELIVER",
+      description: "I test, refine, deploy to cloud (Vercel), and launch solutions that perform."
     }
-  };
+  ];
 
   return (
-    <section id="process" className="px-5 sm:px-6 py-20 sm:py-32 relative">
-      <div className="mx-auto max-w-6xl">
-        {/* Section Heading */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14 sm:mb-16">
-          <div>
-            <p className="text-xs sm:text-sm uppercase tracking-[0.28em] text-red-400 font-semibold mb-3">
-              Workflow &amp; Methodology
+    <section id="process" className="py-20 sm:py-28 px-5 sm:px-8 bg-[#121312] text-[#f5f5f0] border-b border-[#eae3d2]/10">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          
+          {/* Left Column: Heading matching reference */}
+          <div className="lg:col-span-3">
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#eae3d2]/60 mb-1">
+              MY PROCESS
             </p>
-            <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl tracking-tight text-white">
-              My Work <span className="italic text-red-500">Process</span>.
+            <h2 className="font-condensed text-6xl sm:text-8xl font-bold tracking-tight text-[#7c8e77] uppercase leading-[0.88]">
+              STEPS
             </h2>
           </div>
-          <p className="text-sm text-neutral-400 max-w-md leading-relaxed font-light">
-            How I transform complex community and client problems into scalable, production-grade applications.
-          </p>
-        </div>
 
-        {/* Process Steps */}
-        <div className="grid md:grid-cols-5 gap-4 sm:gap-6 relative">
-          {workProcess.map((step, idx) => (
-            <div
-              key={step.number}
-              className="relative p-6 rounded-3xl border border-white/10 bg-[#121217]/70 backdrop-blur-md hover:border-red-500/40 hover:bg-[#161622] transition-all duration-300 flex flex-col justify-between group shadow-lg"
-            >
-              <div>
-                {/* Step Top: Number and Icon */}
-                <div className="flex items-center justify-between mb-5">
-                  <span className="font-mono text-xs sm:text-sm font-bold text-red-400 bg-red-950/60 border border-red-500/30 px-2.5 py-1 rounded-full">
+          {/* Right Column: 5 Columns with delicate connectors */}
+          <div className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 sm:gap-4">
+            {steps.map((step, index) => (
+              <div key={step.number} className="flex flex-col">
+                
+                {/* Number + Horizontal connector line */}
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="font-editorial-serif text-2xl sm:text-3xl text-[#eae3d2] font-normal">
                     {step.number}
                   </span>
-                  <div className="p-2 rounded-xl bg-white/[0.03] border border-white/10 group-hover:scale-110 transition-transform">
-                    {getStepIcon(idx)}
-                  </div>
+                  {index < steps.length - 1 && (
+                    <div className="hidden md:flex flex-1 items-center">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#7c8e77]" />
+                      <div className="flex-1 h-px bg-[#eae3d2]/20" />
+                    </div>
+                  )}
                 </div>
 
-                {/* Phase Name */}
-                <h3 className="font-serif text-xl font-bold text-white tracking-tight mb-2 group-hover:text-red-400 transition-colors">
-                  {step.phase}
+                {/* Step Title */}
+                <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#eae3d2] font-semibold mb-2">
+                  {step.title}
                 </h3>
 
-                {/* Summary */}
-                <p className="text-xs text-neutral-300 font-medium leading-relaxed mb-3">
-                  {step.summary}
+                {/* Step Description */}
+                <p className="text-xs text-[#eae3d2]/70 leading-relaxed font-light">
+                  {step.description}
                 </p>
 
-                {/* Detailed Description */}
-                <p className="text-xs text-neutral-400 leading-relaxed font-light">
-                  {step.details}
-                </p>
               </div>
+            ))}
+          </div>
 
-              {/* Progress Indicator line */}
-              <div className="mt-6 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-neutral-500">
-                <span>Phase {step.number}</span>
-                <span className="text-red-500 font-bold">✓</span>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Temporary scratch & test crops
+scratch/
+*.jpg.jpg
+prev_*.jpg
+neck_prev_*.jpg
+test_neck_*.jpg
+orig_preview_test.jpg
+current_neck_issue.jpg
